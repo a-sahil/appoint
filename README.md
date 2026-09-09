@@ -1,6 +1,6 @@
 # 🗓 Appointment Board
 
-A full-stack appointment management system built for the **Appening Infotech Full Stack Intern** practical task.
+A full-stack appointment management system.
 
 ## Tech Stack
 
@@ -91,10 +91,3 @@ Frontend runs at: http://localhost:5173
 
 ---
 
-## Assumptions
-
-1. **Conflict detection** only checks `scheduled` appointments — completed/cancelled slots can be reused.
-2. **Cancellation** is a soft delete — the record stays in the DB with status `cancelled`.
-3. **SQLAlchemy** auto-creates the table on first run (`create_all`).
-4. **Seed data** is inserted only if the table is empty on startup.
-5. The `end_time` must always be strictly after `start_time` on the same date.
